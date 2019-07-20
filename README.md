@@ -17,6 +17,10 @@ __________
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+### More about using SASS Stylesheets in React
+
+[facebook.github.io/create-react-app/docs/adding-a-sass-stylesheet](https://facebook.github.io/create-react-app/docs/adding-a-sass-stylesheet#docsNav)
+
 ## Available Scripts
 
 In the project directory, you can run:
