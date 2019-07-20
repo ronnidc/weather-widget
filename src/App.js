@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.scss';
-import WeatherWidget from './Widgets/Weather/scripts/Weather';
+import WeatherWidget from './widgets/weather.widget/WeatherWidget';
 
 function App() {
   return (
