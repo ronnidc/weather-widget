@@ -4,7 +4,7 @@ class Title extends Component {
 	render() {
 		return (
 			<div className="panel-heading">
-        Weather in <strong>Copenhagen</strong>
+        Weather in <strong>{this.props.city}</strong>
       </div>
 		);
 	}

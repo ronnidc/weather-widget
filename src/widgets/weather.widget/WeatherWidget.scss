@@ -1,3 +1,18 @@
 .widget {
 	display: inline-block;
+
+	.error-text {
+		color: darkorange;
+		font-weight: bold;
+	}
+
+	.form-inline {
+		padding: 10px 15px;
+	}
+	.form-group {
+		@media (min-width: 768px) {
+			margin-right: 5px;
+		}
+		
+	}
 }
