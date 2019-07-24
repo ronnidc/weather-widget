@@ -20,7 +20,6 @@ class WeatherWidget extends Component {
   componentDidMount = async () => {
     const api_call = await fetch(`${API_URL}q=Copenhagen,dk&appid=${API_KEY}&units=metric`)
     const data = await api_call.json();
-    console.log(data);
 
     this.setState({
       city: 'Copenhagen',
@@ -44,7 +43,6 @@ class WeatherWidget extends Component {
       return false;
     }
     if (city) {
-      console.log(data);
       this.setState({
         city: data.name,
         temperature: Math.round(data.main.temp),
@@ -77,7 +75,7 @@ class WeatherWidget extends Component {
             <Form getWeather={this.getWeather} />
           </div>
         </div>
-  </React.Fragment>
+      </React.Fragment>
     );
   }
 }
