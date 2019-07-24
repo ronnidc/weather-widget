@@ -21,7 +21,3 @@ Info on how to run this application
 __________
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-### SASS Stylesheets in React
-
-[facebook.github.io/create-react-app/docs/adding-a-sass-stylesheet](https://facebook.github.io/create-react-app/docs/adding-a-sass-stylesheet#docsNav)
