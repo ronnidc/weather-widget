@@ -21,6 +21,7 @@ class WeatherWidget extends Component {
     const api_call = await fetch(`${API_URL}q=Copenhagen,dk&appid=${API_KEY}&units=metric`)
     const data = await api_call.json();
     console.log(data);
+
     this.setState({
       city: 'Copenhagen',
       temperature: Math.round(data.main.temp),
@@ -39,7 +40,7 @@ class WeatherWidget extends Component {
     if (data.message) {
       this.setState({
         error: data.message.charAt(0).toUpperCase() + data.message.substr(1)
-      });
+      })
       return false;
     }
     if (city) {
@@ -49,13 +50,9 @@ class WeatherWidget extends Component {
         temperature: Math.round(data.main.temp),
         humidity: data.main.humidity,
         windspeed: Math.round(data.wind.speed),
-        winddeg: data.wind.deg,
+        winddeg: Math.round(data.wind.deg),
         description: data.weather[0].description,
         error: ""
-      })
-    } else {
-      this.setState({
-        error: "Please type the name of the city."
       })
     }
   }

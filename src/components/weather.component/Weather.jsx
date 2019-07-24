@@ -5,13 +5,13 @@ class Weather extends Component {
 		return (
 			<ul className="list-group">
         <li className="list-group-item">
-          Temperature: <strong>{this.props.temperature} &deg;C</strong>
+          Temperature: <strong>{this.props.temperature}&deg;C</strong>
         </li>
         <li className="list-group-item">
           Humidity: <strong>{this.props.humidity}</strong>
         </li>
         <li className="list-group-item">
-          Wind: <strong>{this.props.windspeed} m/s <em>{this.props.winddeg} deg</em></strong>
+          Wind: <strong>{this.props.windspeed} m/s</strong>
         </li>
         {this.props.error && <li className="list-group-item error-text"><em>{ this.props.error }</em></li> }
       </ul>
