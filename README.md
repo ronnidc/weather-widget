@@ -1,5 +1,7 @@
 # Weather Widget - Pre-interview task
 
+*Archived April 25. 2023*
+
 Info on how to run this application
 
 ## Requirements
